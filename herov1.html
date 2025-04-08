@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />  
+</head>
+<script src="scripts.js"></script>
+<body>
+    <div class="preloader"></div>
+    <style>
+        html, body {
+            overflow: hidden;
+            margin: 0;
+        }
+    </style>
+    <div class="hero-page">
+        <div class="hero-content">
+            <div class="card-content">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="card-link">
+                              <img src="assets/hero-v1-start.png" alt="Card Image" class="card-image">
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#" class="card-link">
+                              <img src="assets/hero-v1-chat.png" alt="Card Image" class="card-image">
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#" class="card-link">
+                              <img src="assets/hero-v1-remind.png" alt="Card Image" class="card-image">
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#" class="card-link">
+                              <img src="assets/hero-v1-sett.png" alt="Card Image" class="card-image">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+               
+            </div>
+            <div class="hero-info-container">
+                <div class="info-padding">
+                    <h1>Hero Version 1 - Diagnosis Prediction</h1>
+                    <p class="main-para">Type in your symptoms and Hero will try to predict an area of diagnosis based on twelve categories.<br>
+                        Paired with an Android application for future development.<br>
+                        Displays a template to show how a user might interact.
+                    </p>
+                    <h2>Technical</h2>
+                    <p>- Android Studio (Required)<br>- Visual Studio Code (Required)</p>
+                    <p class="tech-para">The project is built using Java and XML, with Gradle Scripts for efficient development. It utilizes Firebase for cloud storage, securely managing user login information and authentication codes.</p>
+                    <div class="hero-btn">
+                        <button class="ghub-btn" onclick="window.open('https://github.com/Asteriff/Hero-V1')">GitHub Repo</button>
+                        <a href="assets/downloads/Hero-V1-main.zip" download="HeroV1" class="dload-btn">
+                            Download
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        new Swiper('.swiper', {
+            slidesPerView: 1, // Show one slide at a time
+            spaceBetween: 20, // Space between slides
+            centeredSlides: true, // Center the active slide
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            });
+    </script>
+</body>
+</html> 

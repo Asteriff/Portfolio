@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />  
+</head>
+<script src="scripts.js"></script>
+<body>
+    <div class="preloader"></div>
+    <style>
+        html, body {
+            overflow: hidden;
+            margin: 0;
+        }
+    </style>
+    <div class="career-page">
+        <div class="career-content">
+            <div class="card-content">
+                <img src="/assets/career-img.png" class="career-img" alt="Career Image" onclick="openModal()" width="1000px" height="95%">
+            </div>
+            <div class="career-info-container">
+                <div class="info-padding">
+                    <h1>Career Field AI - Predicting Jobs</h1>
+                    <p class="main-para"> AI-driven tool that predicts suitable job opportunities based on users' skills, experiences, and career aspirations.<br>
+                        Utilizes natural language processing and machine learning algorithms to analyze user profiles and match them<br>
+                        with relevant job listings, facilitating informed career decisions.
+                    </p>
+                    <h2>Technical</h2>
+                    <p>- Visual Studio Code (Required)<br>
+                       - Internet Access</p>
+                    <p class="tech-para">The project is developed in VS Code using the Jupyter Notebook extension. It leverages Pandas and Scikit-learn to build a predictive model, which is seamlessly integrated into a user-friendly website.</p>
+                    <div class="career-btn">
+                        <button class="ghub-btn" onclick="window.open('https://github.com/Asteriff/Job-Transition-Recommender')">GitHub Repo</button>
+                        <a href="assets/downloads/Job-Transition-Recommender-main.zip" download="Career AI" class="dload-btn">
+                            Download
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- The Modal -->
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="fullImage">
+        </div>
+    </div>
+</body>
+</html> 

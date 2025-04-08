@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />  
+</head>
+<script src="scripts.js"></script>
+<body>
+    <div class="preloader"></div>
+    <style>
+        html, body {
+            overflow: hidden;
+            margin: 0;
+        }
+    </style>
+    <div class="dating-page">
+        <div class="dating-content">
+            <div class="card-content">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="card-link">
+                              <img src="assets/dating-start.png" alt="Card Image" class="card-image">
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#" class="card-link">
+                              <img src="assets/dating-swipe.png" alt="Card Image" class="card-image">
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#" class="card-link">
+                              <img src="assets/dating-profile.png" alt="Card Image" class="card-image">
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="#" class="card-link">
+                              <img src="assets/dating-sett.png" alt="Card Image" class="card-image">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+               
+            </div>
+            <div class="dating-info-container">
+                <div class="info-padding">
+                    <h1>WEGATYOU  - Dating App</h1>
+                    <p class="main-para">If you're looking for love and great food, we've got you covered!<br>
+                        Our dating app is designed for food lovers, helping you connect with like-minded people while exploring nearby
+                        restaurants.<br>
+                        Profile pages showcase food preferences, making it easier to find your perfect match
+                        over a meal you’ll both enjoy!
+                    </p>
+                    <h2>Technical</h2>
+                    <p>- Android Studio (Required)</p>
+                    <p class="tech-para">The project is built using Java and XML, with Gradle Scripts for efficient development. It utilizes Firebase for cloud storage, securely managing user login information and authentication codes.</p>
+                    <div class="hero-btn">
+                        <button class="ghub-btn" onclick="window.open('https://github.com/Asteriff/WEGATYOU-Dating-App')">GitHub Repo</button>
+                        <a href="assets/downloads/WEGATYOU-Dating-App-main.zip" download="WEGATYOU" class="dload-btn">
+                            Download
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        new Swiper('.swiper', {
+            slidesPerView: 1, // Show one slide at a time
+            spaceBetween: 20, // Space between slides
+            centeredSlides: true, // Center the active slide
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            });
+    </script>
+</body>
+</html> 
